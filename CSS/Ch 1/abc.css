@@ -1,0 +1,18 @@
+body{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h4{
+    color:green;
+}
+button{
+    background-color: white;
+    color:green;
+}
+p{
+    line-height: 30px;
+
+}
+span{
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+#maintopic{
+    color: blue;
+
+}
+h1::first-letter{
+    color: red;
+}
+
+* {
+    text-align: center;
+}
+h1 , h3 , h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#unique{
+    color: white;
+    background-color: cornflowerblue;
+}
+button{
+    background-color: purple;
+    color: azure;
+    
+}
+
+p:nth-of-type(2n+1){
+    color: yellow;
+}

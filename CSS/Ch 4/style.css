@@ -1,0 +1,54 @@
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255, 0, 0, 0.3);
+    margin-top:10px;
+    margin: 0 auto;
+    transition: margin-top 2s ease-in 0.2 s;
+
+} */
+/* 
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+}
+
+#opacity{
+    background-color: #ffa511;
+    opacity: 0.5;
+} */
+
+/* div{
+    width:1000px;
+    height: 600px;
+    background-color: #7aa874;
+    margin: 10px auto;
+    background-image: url("skull-shadow-oled-4k-r9-2880x1800.jpg") ;
+    background-size: contain;
+    color: white;
+    
+} */
+
+.card{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px black;
+}
+
+.desc {
+    padding: 0 2px 0 2px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px black;
+}
+

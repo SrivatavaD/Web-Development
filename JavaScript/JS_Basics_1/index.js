@@ -62,9 +62,28 @@ console.log('Namaste Dunia version4');
 //     x++;
 // }
 
-let y = 1;
+// let y = 1;
 
-do {
-    console.log(y);
-    y++;
-} while(y < 10);
+// do {
+//     console.log(y);
+//     y++;
+// } while(y < 10);
+
+for(let i =1; i<=6; i++){
+    if(i==4)
+        break;
+    else
+    console.log(i);
+}
+
+let i =1;
+while(i<5){
+    console.log("Inside the loop");
+    if(i==3){
+        i++;
+        continue;
+    }
+    else 
+    console.log(i);
+i++;
+}

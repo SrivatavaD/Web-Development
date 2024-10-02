@@ -128,10 +128,10 @@ console.log('Chaliye shuru karte hai ');
 
 // console.log(a.value);
 
-let rectangle = {
-    length:2,
-    breadth:4
-};
+// let rectangle = {
+//     length:2,
+//     breadth:4
+// };
 
 //for-in loop 
 // for(let key in rectangle ) {
@@ -202,3 +202,62 @@ let rectangle = {
 // src.a++;
 
 // console.log(dest);
+
+
+// console.log("Devansh");
+// //defination of fnction
+// function sayMyName(){
+//     console.log("Devansh")
+// }
+
+//calling of function
+// sayMyName();
+
+// function printCounting(){
+//     for( let i=1; i<10; i++){
+//         console.log(i);
+//     }
+// }
+
+// printCounting();
+
+// function printNumber(num){
+//     console.log("Printing num", num);
+// }
+
+// printNumber(10);
+
+// function getAverage(num1, num2){
+//     let avg = (num1 + num2)/2;
+//     console.log("Average:" , avg);
+
+// }
+
+// getAverage(3,70);
+
+
+// return function
+
+function getSum(a,b,c){
+    let sum = a+b+c;
+    return sum;
+}
+
+let sum = getSum(1,2,3);
+console.log("Printing Sum: " , sum);
+
+function getName(firstName, lastName){
+    let fullName = firstName + " " + lastName;
+    return fullName;
+}
+
+let fullName = getName ("Devansh" , "Srivastava");
+console.log("Full Name: " ,  fullName);
+
+let sqaureNumber = function(num) {
+    let ans = num**2;
+    return ans;
+}
+
+let ans = sqaureNumber(5);
+console.log(ans);

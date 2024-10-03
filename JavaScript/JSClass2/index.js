@@ -238,26 +238,91 @@ console.log('Chaliye shuru karte hai ');
 
 // return function
 
-function getSum(a,b,c){
-    let sum = a+b+c;
-    return sum;
-}
+// function getSum(a,b,c){
+//     let sum = a+b+c;
+//     return sum;
+// }
 
-let sum = getSum(1,2,3);
-console.log("Printing Sum: " , sum);
+// let sum = getSum(1,2,3);
+// console.log("Printing Sum: " , sum);
 
-function getName(firstName, lastName){
-    let fullName = firstName + " " + lastName;
-    return fullName;
-}
+// function getName(firstName, lastName){
+//     let fullName = firstName + " " + lastName;
+//     return fullName;
+// }
 
-let fullName = getName ("Devansh" , "Srivastava");
-console.log("Full Name: " ,  fullName);
+// let fullName = getName ("Devansh" , "Srivastava");
+// console.log("Full Name: " ,  fullName);
 
-let sqaureNumber = function(num) {
-    let ans = num**2;
-    return ans;
-}
+// let sqaureNumber = function(num) {
+//     let ans = num**2;
+//     return ans;
+// }
 
-let ans = sqaureNumber(5);
-console.log(ans);
+// let ans = sqaureNumber(5);
+// console.log(ans);
+
+// let obj = {
+//     name:"Devansh",
+//     age:"21",
+//     weight:'71',
+//     greet: function(){
+//         console.log("hello jii kaise ho");
+//     }
+// };
+
+// console.log(obj)
+// obj.greet();
+// console.log(typeof(obj))
+
+// //creation of arr
+// let arr = [1,2,3,4,4];
+
+// //array constructor
+
+// let brr = new Array ('Love', 1, true);
+// brr.push('Devansh');
+// brr.pop();
+
+// brr.shift();
+// brr.unshift('Devansh Sri');
+// brr.push(20);
+// brr.push(40);
+
+// brr.push(70);
+
+// console.log(brr);
+// console.log(arr);
+
+// let arr = [10,20,30];
+//  arr.map((number) => {
+//     console.log(number+1);
+//  })
+
+//  let arr= [20,30,40,50,60];
+//   let evenArray = arr.filter((number) => {
+//     return number % 2 === 0;
+
+//     // if(number%2 === 0){
+//     //return true;
+//     //}
+//     //else {
+//     // return false;
+//     //}
+//   });
+//   console.log(evenArray);
+
+// let arr = [ 10,20,30,40,50,60];
+// function getSum(arr){
+//     let len = arr.length;
+//     let sum = 0;
+//     for(let index = 0; index<len; index++){
+//         sum = sum + arr[index];
+//     } 
+//     return sum;
+// }
+
+// let totalSum = getSum(arr);
+// console.log(totalSum);
+
+  

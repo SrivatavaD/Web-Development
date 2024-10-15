@@ -56,49 +56,83 @@
 
 // Code 1 
 
-const t1 = performance.now()
+// const t1 = performance.now()
 
-for(let i =1; i<100; i++){
-    let para = document.createElement('p');
-    para.textContent = "This is para" +i;
-    document.body.appendChild(para);
-}
+// for(let i =1; i<100; i++){
+//     let para = document.createElement('p');
+//     para.textContent = "This is para" +i;
+//     document.body.appendChild(para);
+// }
 
-const t2 = performance.now();
+// const t2 = performance.now();
 
-console.log("Total time by code 1: " + (t2-t1));
-
-
-//code 2
-
-const t3 = performance.now()
-
-let mydiv = document.createElement('div');
-
-for(let i = 1; i<=100; i++) {
-    let para = document.createElement('p');
-    para.textContent = "This is Para" +i;
-    myDiv.appendChild(para);
-}
-
-document.body.appendChild(mydiv);
-
-const t4 = performance.now();
-
-console.log("Total time by code 2: " + (t4-t3));
+// console.log("Total time by code 1: " + (t2-t1));
 
 
-// best code
+// //code 2
 
-let fragment = document.createDocumentFragment();
+// const t3 = performance.now()
 
-for(let i = 1; i<100; i++){
-    let para  = document.createElement('p');
-    para.textContent = "This is para" +i;
+// let mydiv = document.createElement('div');
 
-    //NO reflow and repaint for the below line
-    fragment.appendChild(para);
+// for(let i = 1; i<=100; i++) {
+//     let para = document.createElement('p');
+//     para.textContent = "This is Para" +i;
+//     myDiv.appendChild(para);
+// }
 
-}
+// document.body.appendChild(mydiv);
 
-document.body.appendChild(fragment);
+// const t4 = performance.now();
+
+// console.log("Total time by code 2: " + (t4-t3));
+
+
+// // best code
+
+// let fragment = document.createDocumentFragment();
+
+// for(let i = 1; i<100; i++){
+//     let para  = document.createElement('p');
+//     para.textContent = "This is para" +i;
+
+//     //NO reflow and repaint for the below line
+//     fragment.appendChild(para);
+
+// }
+
+// document.body.appendChild(fragment);
+
+// let firstPromise = new Promise(( resolve , reject) => {
+//     console.log("Devansh");
+//     // resolve(1001);
+//     reject(new Error("internal server error"));
+
+
+// } );
+
+// function sayMyName(){
+//     console.log("MY name is devansh");
+// }
+// setTimeout(10)
+
+let promise1 = new Promise(( resolve, reject) => {
+    setTimeout(resolve, 1000, "First");
+})
+
+let promise2 = new Promise(( resolve, reject) => {
+    setTimeout(resolve, 2000, "Second");
+})
+
+let promise3 = new Promise(( resolve, reject) => {
+    setTimeout(resolve, 3000, "third");
+})
+
+Promise.all([Promise3, Promise2, Promise1])
+.then((Values) => {
+    console.log(values);
+})
+
+.catch((error) => {
+    console.log("error:" +error);
+})

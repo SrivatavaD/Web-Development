@@ -1,4 +1,3 @@
-
 // function eventFunction() {
 //     console.log('I have clicked on the docuemnt');
 // }
@@ -25,7 +24,7 @@
 
 // function paraStatus(event) {
 //     console.log('Para ' + event.target.textContent);
-// } 
+// }
 // myDiv.addEventListener('click', paraStatus);
 
 // for(let i=1; i<=100; i++) {
@@ -53,8 +52,7 @@
 // let fpara =  document.getElementById('fpara');
 // fpara.addEventListener('click', changeText);
 
-
-// Code 1 
+// Code 1
 
 // const t1 = performance.now()
 
@@ -67,7 +65,6 @@
 // const t2 = performance.now();
 
 // console.log("Total time by code 1: " + (t2-t1));
-
 
 // //code 2
 
@@ -86,7 +83,6 @@
 // const t4 = performance.now();
 
 // console.log("Total time by code 2: " + (t4-t3));
-
 
 // // best code
 
@@ -108,7 +104,6 @@
 //     // resolve(1001);
 //     reject(new Error("internal server error"));
 
-
 // } );
 
 // function sayMyName(){
@@ -116,23 +111,56 @@
 // }
 // setTimeout(10)
 
-let promise1 = new Promise(( resolve, reject) => {
-    setTimeout(resolve, 1000, "First");
-})
+// let promise1 = new Promise(( resolve, reject) => {
+//     setTimeout(resolve, 1000, "First");
+// })
 
-let promise2 = new Promise(( resolve, reject) => {
-    setTimeout(resolve, 2000, "Second");
-})
+// let promise2 = new Promise(( resolve, reject) => {
+//     setTimeout(resolve, 2000, "Second");
+// })
 
-let promise3 = new Promise(( resolve, reject) => {
-    setTimeout(resolve, 3000, "third");
-})
+// let promise3 = new Promise(( resolve, reject) => {
+//     setTimeout(resolve, 3000, "third");
+// })
 
-Promise.all([Promise3, Promise2, Promise1])
-.then((Values) => {
-    console.log(values);
-})
+// Promise.all([Promise3, Promise2, Promise1])
+// .then((Values) => {
+//     console.log(values);
+// })
 
-.catch((error) => {
-    console.log("error:" +error);
-})
+// .catch((error) => {
+//     console.log("error:" +error);
+// })
+
+// async function getData() {
+//   setTimeout(function () {
+//     console.log("I am inside set timeout block");
+//   }, 3000);
+// }
+
+// getData();
+
+// async function getData(){
+
+//     // get request - async
+//     let response = await fetch('https://jsonplaceholder.typicode.com/posts');
+
+//     // parse json- aysnc
+
+//     let data = response.json();
+
+//     console.log(response);
+// }
+
+// getData();
+
+function outerFunc() {
+    var name = "Devansh"; // name is a local variable created by init
+    function innerFunc() {
+      // displayName() is the inner function, that forms a closure
+      console.log(name); // use variable declared in the parent function
+    }
+    displayName();
+  }
+outerFunc();
+  

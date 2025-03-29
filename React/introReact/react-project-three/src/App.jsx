@@ -50,12 +50,12 @@ function App() {
       <ItemDate day={response[2].itemDate} month={response[2].itemMonth} year={response[2].itemyear}></ItemDate>
      
       
-      <div className="App">Hello JI</div>
+      <div className="App">Hello everyone</div>
     
     </div> 
    
 
   )
 }
-
+ 
 export default App
